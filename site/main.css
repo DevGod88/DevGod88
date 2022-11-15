@@ -1,0 +1,304 @@
+/* * {
+    border: 1px solid black;
+    font-weight: bold;
+    background-color: rgb(238, 143, 126); 
+} */
+
+
+* {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/***Gestion du style du block header***/
+h1 {
+    font-size: 3em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(119, 223, 171);
+    width:400px;
+    margin:35px auto 40px auto;
+}
+
+#main_link {
+    width:400px;
+}
+
+#scrambled {
+    margin-bottom: 20px;
+}
+
+header {
+    background-color: rgb(119, 223, 171);
+    scroll-behavior: unset;
+    position:fixed;
+    width: 100%;
+    margin-left: -9px;
+    margin-top: -17px;
+    height: 200px;
+}
+
+body {
+    text-align: center;
+    background-color:#af923263;
+}
+
+nav{
+    background-color: rgb(119, 223, 171);
+}
+
+nav ul li{
+    font-family:initial;
+    font-weight: 700;
+    display: inline;
+    margin: 20px;
+    padding: 20px;
+    font-size: large;
+    max-width: 100%;
+    font-size: 25px;
+    background-color: rgb(119, 223, 171);
+    color: black;
+}
+
+nav ul{background-color: rgb(119, 223, 171);}
+
+a{
+    background-color: rgb(119, 223, 171);
+    text-decoration: none;
+    color: inherit;
+}
+
+
+nav ul li:hover {
+    background-color: #b97373;
+}
+
+#nom{
+    position:absolute;
+    display: inline;
+    margin-left: 700px;
+    margin-bottom: 50px;
+    font-size: 28px;
+}
+
+/*Getion des couleurs pour header*/
+
+
+#x2{color: white;}
+#x3{color: blue;}
+#x4{color: red;}
+#pyra{color: rgb(255, 115, 0);}
+#mega{color: green;}
+#other{color: yellow;}
+
+
+/*Gestion du bloc article*/
+
+article {
+    padding-top:200px;
+}
+
+article p {
+    line-height: 2.0;
+    font-size: 24px;
+    text-align:left;
+    margin-left: 20px;
+}
+
+article ul li {
+    list-style-type: square;
+    font-size:22px;
+    margin: 50px;
+}
+
+#list_num {
+    text-align: left;
+}
+
+h2 {
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+span {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
+div img{
+    display: inline;
+    margin: auto;
+}
+
+iframe {
+    max-width:100%;
+}
+
+.same_method {
+    display:inline-block;
+}
+
+/***Gestion du bloc details***/
+footer{
+    background-color: #808080;
+    text-align: left;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+footer p{font-size:25px;}
+
+footer li{
+    font-size:20px;
+    list-style-type: none;
+}
+
+.num_im {text-align: center;}
+
+img {max-width:100%;}
+
+
+
+/***Gestion de la scrollbar***/
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e6b65e; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #af9232; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8f6c0c;
+}
+
+#mirror_full {
+    margin-right: 10px;
+}
+
+
+
+/***Gestion du tableau (wr.html)***/
+table,td {
+    border: 1px solid #333;
+}
+
+table{
+    margin: auto;
+    margin-top: 25px;
+}
+
+thead,tfoot {
+    background-color: rgb(236, 100, 100);
+    color: #fff;
+}
+
+td{
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+th {
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.head_td {
+    font-weight: 700;
+    font-size: 23px;
+}
+
+
+/***Gestion du loader***/
+
+/* header, article, footer {display: none;} */
+
+#loader{
+    display: inline;
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes ease-out-perso {
+    0% {
+        opacity:1;
+    }
+    10%{
+        opacity: 0.9;
+    }
+    20%{
+        opacity: 0.8;
+    }
+    30%{
+        opacity: 0.7;
+    }
+    40%{
+        opacity: 0.6;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    60%{
+        opacity: 0.4;
+    }
+    70%{
+        opacity: 0.3;
+    }
+    80%{
+        opacity: 0.2;
+    }
+    90%{
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/***Gestion du responsive***/
+
+#menu {
+    display: none;
+}
+
+@media screen and (max-width: 1485px) {
+    article{padding-top:100px;}
+    nav {
+        display: none;
+        position: absolute;
+    }
+    
+    nav ul {
+        display:block;
+        padding: 0;
+        justify-content: space-around;
+    }
+
+    
+    nav ul li{display: block;}
+
+    header {
+        height:120px;
+    }
+
+    #menu {
+        position: absolute;
+        margin-left: auto;
+        display: block;
+        margin-top: 22px;
+        margin-left: 10px;
+    }
+
+
+}
